@@ -20,9 +20,9 @@ class Project:
     authors: List[Author]
 
 my_project = Project("DataJson", True, [Author("Rodney", "McKay", 34)])
-assert datajson.encode_to_string(my_project) == '{"name": "DataJson", "authors": [{"first_name": "Rodney", "last_name": "McKay"}]}'
+assert datajson.encode_to_string(my_project) == '{"name": "DataJson", "is_cool": true, "authors": [{"first_name": "Rodney", "last_name": "McKay", "age": 34}]}'
 
-a_project = datajson.decode_from_string(Project, '{"name": "DataJson", "authors": [{"first_name": "Rodney", "last_name": "McKay"}]}')
+a_project = datajson.decode_from_string(Project, '{"name": "DataJson", "is_cool": true, "authors": [{"first_name": "Rodney", "last_name": "McKay", "age": 34}]}')
 assert a_project == my_project
 ```
 
