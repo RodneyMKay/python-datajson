@@ -1,0 +1,6 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.languageServer": "Pylance",
+    "python.missingPackage.severity": "Error",
+    "python.analysis.autoImportCompletions": true
+}
